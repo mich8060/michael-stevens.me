@@ -15,7 +15,7 @@
 <meta content="website" property="og:type" />
 <meta content="Michael Stevens: Product Designer &amp; Design Manager" property="og:site_name" />
 <meta content="Michael Stevens: Product Designer &amp; Design Manager" property="og:description" /> 
-<link rel="stylesheet" href="/wp-content/themes/portfolio/style.css?<?php echo time(); ?>" />
+<link rel="stylesheet" href="<? echo get_theme_file_uri('style.css').'?'.time(); ?>" />
 </head>  
 <body>
     <article>
@@ -36,7 +36,8 @@
                         <h6 class="upper secondary">Intro</h6>
                         <h1>Product Designer &amp; Design Manager in <br>Park City, Utah.</h1>
                         <h4 class="secondary">See bits and pieces of my design work on <a href="http://www.dribbble.com/mich8060" target="_blank">Dribbble</a>, <br>and a full resume on <a href="https://www.linkedin.com/in/michael-stevens-a010a66" target="_blank">Linkedin</a>.</h4>
-                    </div>
+                    	
+					</div>
                     <div class="clear"></div>
                 </div>
             </section>
@@ -133,7 +134,7 @@
             </section>
             <section theme="dark" class="anchored" style="height: 1057px;">
                 <div class="project" style="position: fixed; z-index: 5;">
-                    <div class="image"><img src="/wp-content/themes/portfolio/img/backcountry_site.jpg" alt=""></div>
+                    <div class="image"><img src="<? echo get_theme_file_uri('img/backcountry_site.jpg'); ?>" alt=""></div>
                     <div class="details">
                         <div class="symbol black">B</div>
                         <p>
@@ -151,7 +152,7 @@
             </section>
             <section theme="light" class="anchored" style="height: 1057px;">
                 <div class="project" style="position: fixed; z-index: 4;">
-                    <div class="image"><img src="/wp-content/themes/portfolio/img/skullcandy.jpg" alt=""></div>
+                    <div class="image"><img src="<? echo get_theme_file_uri('img/skullcandy.jpg'); ?>" alt=""></div>
                     <div class="details invert">
                         <div class="symbol black">S</div>
                         <p>
@@ -172,7 +173,7 @@
             </section>
             <section theme="dark" class="anchored" style="height: 1057px;">
                 <div class="project" style="position: fixed; z-index: 3;">
-                    <div class="image"><img src="/wp-content/themes/portfolio/img/backcountry_app.jpg" alt=""></div>
+                    <div class="image"><img src="<? echo get_theme_file_uri('img/backcountry_app.jpg'); ?>" alt=""></div>
                     <div class="details">
                         <div class="symbol white">B</div>
                         <p>
@@ -191,7 +192,7 @@
             </section>
             <section theme="light" class="anchored" style="height: 1057px;">
                 <div class="project invert" style="position: fixed; z-index: 2;">
-                    <div class="image"><img src="/wp-content/themes/portfolio/img/competitive.jpg" alt=""></div>
+                    <div class="image"><img src="<? echo get_theme_file_uri('img/competitive.jpg'); ?>" alt=""></div>
                     <div class="details invert">
                         <div class="symbol">C</div>
                         <p>
@@ -224,7 +225,7 @@
             </section>
         </main>
     </article>
-    <script src="/wp-content/themes/portfolio/js/jquery-1.12.3.min.js"></script>
-    <script src="/wp-content/themes/portfolio/js/jquery.site.js"></script>      
+    <script src="<? echo get_theme_file_uri('js/jquery-1.12.3.min.js'); ?>"></script>
+    <script src="<? echo get_theme_file_uri('js/jquery.site.js'); ?>"></script>      
 </body>     
 </html>
