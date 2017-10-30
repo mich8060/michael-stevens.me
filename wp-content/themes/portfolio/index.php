@@ -36,7 +36,6 @@
                         <h6 class="upper secondary">Intro</h6>
                         <h1>Product Designer &amp; Design Manager in <br>Park City, Utah.</h1>
                         <h4 class="secondary">See bits and pieces of my design work on <a href="http://www.dribbble.com/mich8060" target="_blank">Dribbble</a>, <br>and a full resume on <a href="https://www.linkedin.com/in/michael-stevens-a010a66" target="_blank">Linkedin</a>.</h4>
-                    	<?php echo wp_make_link_relative(get_theme_file_uri('style.css')); ?>
 					</div>
                     <div class="clear"></div>
                 </div>
