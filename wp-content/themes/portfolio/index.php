@@ -224,7 +224,7 @@
             </section>
         </main>
     </article>
-    <script src="js/jquery-1.12.3.min.js"></script>
-    <script src="js/jquery.site.js"></script>      
+    <script src="/wp-content/themes/portfolio/js/jquery-1.12.3.min.js"></script>
+    <script src="/wp-content/themes/portfolio/js/jquery.site.js"></script>      
 </body>     
 </html>
