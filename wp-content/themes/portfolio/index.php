@@ -17,7 +17,7 @@
 <meta content="website" property="og:type" />
 <meta content="Michael Stevens: Product Designer &amp; Design Manager" property="og:site_name" />
 <meta content="Michael Stevens: Product Designer &amp; Design Manager" property="og:description" /> 
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css?<?php echo time(); ?>" />
+<link rel="stylesheet" href="/wp-content/themes/portfolio/style.css?<?php echo time(); ?>" />
 </head>  
 <body>
     <article>
