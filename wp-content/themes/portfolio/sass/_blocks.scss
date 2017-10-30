@@ -1,0 +1,162 @@
+article {
+	height:100%;
+}
+
+logo {
+	color:colors(black);
+	display:block;
+	font-size:36px;
+	font-weight:700;
+	line-height:36px;
+	padding:20px;
+	@include prefix('box-sizing',border-box);
+	
+	a {
+		border-bottom:solid 1px transparent;
+		color:colors(black);
+		
+		&:hover {
+			border:none;
+		}
+	}
+	
+	span {
+		color:colors(blue);
+		left:2px;
+		position:relative;
+		top:-5px;
+	}
+}
+
+header {
+	text-align:center;
+	z-index:99999;
+	
+	.menu {
+		color:colors(black);
+		cursor:pointer;
+		display:block;
+		height:40px;
+		left:20px;
+		margin:0 auto;
+		position:absolute;
+		top:20px;
+		width:40px;
+		
+		.line {
+			background:colors(black);
+			height:1px;
+			position:absolute;
+			top:10px;
+			left:50%;
+			margin-left:-11px;
+			width:22px;
+			@include prefix("transition", (transform 0.1s ease-in-out, top 0.1s 0.1s ease-in-out, opacity 0.1s 0.2s ease-in-out));
+			
+			&:first-of-type {
+				top:4px;
+			}
+			
+			&:last-of-type {
+				top:16px;
+			}
+		}
+	}
+}
+
+.open {
+	header {
+		.menu {
+			.line {
+				opacity:0;
+				@include prefix("transition", (opacity 0.1s ease-in-out, top 0.1s 0.1s ease-in-out, transform 0.1s 0.2s ease-in-out));
+
+				&:first-of-type {
+					opacity:1;
+					top:10px;
+					@include prefix("transform", rotate(45deg));
+				}
+
+				&:last-of-type {
+					opacity:1;
+					top:10px;
+					@include prefix("transform", rotate(-45deg));
+				}
+			}	
+		}
+	}
+	
+	nav {
+		pointer-events:auto;
+		opacity:1;
+		visibility:visible;
+	}
+}
+
+main {
+	min-height:100%;
+	padding-bottom:200px;
+	position:relative;
+}
+
+menu {
+	
+	a {
+		color:colors(gray-1);
+		display:block;
+		font-family:'ChronicleDisplay';
+		font-size:24px;
+		line-height:24px;
+		margin:30px 0;
+
+		&:hover {
+			span {
+				border-bottom:solid 1px colors(gold);
+			}
+		}	
+	}
+}
+
+nav {
+	background:rgba(colors(white),0.98);
+	border-right:solid 1px colors(gray-4);
+	bottom:0;
+	display:block;
+	left:0;
+	opacity:0;
+	overflow:scroll; 
+	overflow-y: scroll; 
+	overflow-x: hidden;
+	padding:30px;
+	pointer-events: none;
+	position:absolute;
+	right:0;
+	text-align:center;
+	top:80px;
+	visibility:hidden;
+	z-index:9999;
+	@include prefix("overflow-scrolling",touch);
+	@include prefix('box-sizing',border-box);
+	@include prefix("transition", all 0.3s ease);
+}
+
+search {
+	display:block;
+	margin-bottom:50px;
+	
+	input {		
+		text-indent:20px;	
+	}
+	
+	.icons {
+		border-bottom:none;
+		margin-left:-5px;
+		margin-top:1px;
+		position:absolute;
+		
+		&:before {
+			font-size:16px;
+		}
+	}
+	
+}
