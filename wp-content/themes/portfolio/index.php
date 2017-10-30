@@ -5,14 +5,12 @@
 <title></title>    
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
 <meta content="955357184504374" property="fb:app_id" />
-<meta content="summary_large_image" name="twitter:card" />
-<meta content="http://michael-stevens.me/img/layout/michael-stevens-preview.jpg?1509047650" property="twitter:image:src" />
+<meta content="summary_large_image" name="twitter:card" />                                                             
 <meta content="Michael Stevens: Product Designer &amp; Design Manager" name="twitter:title" />
 <meta content="Michael Stevens: Product Designer &amp; Design Manager" name="twitter:description" />
 <meta content="Michael Stevens: Product Designer &amp; Design Manager" name="description" />
 <meta content="!" name="fragment" />
-<meta content="http://michael-stevens.me/" property="og:url" />
-<meta content="http://michael-stevens.me/img/layout/michael-stevens-preview.jpg" property="og:image" />
+<meta content="http://michael-stevens.me/" property="og:url" />                                        
 <meta content="Michael Stevens: Product Designer &amp; Design Manager" property="og:title" />
 <meta content="website" property="og:type" />
 <meta content="Michael Stevens: Product Designer &amp; Design Manager" property="og:site_name" />
@@ -135,7 +133,7 @@
             </section>
             <section theme="dark" class="anchored" style="height: 1057px;">
                 <div class="project" style="position: fixed; z-index: 5;">
-                    <div class="image"><img src="img/backcountry_site.jpg" alt=""></div>
+                    <div class="image"><img src="/wp-content/themes/portfolio/img/backcountry_site.jpg" alt=""></div>
                     <div class="details">
                         <div class="symbol black">B</div>
                         <p>
@@ -153,7 +151,7 @@
             </section>
             <section theme="light" class="anchored" style="height: 1057px;">
                 <div class="project" style="position: fixed; z-index: 4;">
-                    <div class="image"><img src="img/skullcandy.jpg" alt=""></div>
+                    <div class="image"><img src="/wp-content/themes/portfolio/img/skullcandy.jpg" alt=""></div>
                     <div class="details invert">
                         <div class="symbol black">S</div>
                         <p>
@@ -174,7 +172,7 @@
             </section>
             <section theme="dark" class="anchored" style="height: 1057px;">
                 <div class="project" style="position: fixed; z-index: 3;">
-                    <div class="image"><img src="img/backcountry_app.jpg" alt=""></div>
+                    <div class="image"><img src="/wp-content/themes/portfolio/img/backcountry_app.jpg" alt=""></div>
                     <div class="details">
                         <div class="symbol white">B</div>
                         <p>
@@ -193,7 +191,7 @@
             </section>
             <section theme="light" class="anchored" style="height: 1057px;">
                 <div class="project invert" style="position: fixed; z-index: 2;">
-                    <div class="image"><img src="img/competitive.jpg" alt=""></div>
+                    <div class="image"><img src="/wp-content/themes/portfolio/img/competitive.jpg" alt=""></div>
                     <div class="details invert">
                         <div class="symbol">C</div>
                         <p>
