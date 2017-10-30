@@ -27,6 +27,11 @@ $env = [
         'path'   => '',
         'ssl'    => false,
     ],
+    'staging'  => [
+        'domain' => 'vast-mesa-75247.herokuapp.com',
+        'path'   => '',
+        'ssl'    => false,
+    ],
     'development' => [
         'domain' => 'localhost:8888',
         'path'   => 'michael-stevens.me',
