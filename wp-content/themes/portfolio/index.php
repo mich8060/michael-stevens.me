@@ -15,7 +15,7 @@
 <meta content="website" property="og:type" />
 <meta content="Michael Stevens: Product Designer &amp; Design Manager" property="og:site_name" />
 <meta content="Michael Stevens: Product Designer &amp; Design Manager" property="og:description" /> 
-<link rel="stylesheet" href="<? echo get_theme_file_uri('style.css').'?'.time(); ?>" />
+<link rel="stylesheet" href="<? echo wp_make_link_relative(get_theme_file_uri('style.css').'?'.time()); ?>" />
 </head>  
 <body>
     <article>
@@ -36,7 +36,7 @@
                         <h6 class="upper secondary">Intro</h6>
                         <h1>Product Designer &amp; Design Manager in <br>Park City, Utah.</h1>
                         <h4 class="secondary">See bits and pieces of my design work on <a href="http://www.dribbble.com/mich8060" target="_blank">Dribbble</a>, <br>and a full resume on <a href="https://www.linkedin.com/in/michael-stevens-a010a66" target="_blank">Linkedin</a>.</h4>
-                    	
+                    	<?php echo wp_make_link_relative(get_theme_file_uri('style.css')); ?>
 					</div>
                     <div class="clear"></div>
                 </div>
@@ -134,7 +134,7 @@
             </section>
             <section theme="dark" class="anchored" style="height: 1057px;">
                 <div class="project" style="position: fixed; z-index: 5;">
-                    <div class="image"><img src="<? echo get_theme_file_uri('img/backcountry_site.jpg'); ?>" alt=""></div>
+                    <div class="image"><img src="<? echo wp_make_link_relative(get_theme_file_uri('img/backcountry_site.jpg')); ?>" alt=""></div>
                     <div class="details">
                         <div class="symbol black">B</div>
                         <p>
@@ -152,7 +152,7 @@
             </section>
             <section theme="light" class="anchored" style="height: 1057px;">
                 <div class="project" style="position: fixed; z-index: 4;">
-                    <div class="image"><img src="<? echo get_theme_file_uri('img/skullcandy.jpg'); ?>" alt=""></div>
+                    <div class="image"><img src="<? echo wp_make_link_relative(get_theme_file_uri('img/skullcandy.jpg')); ?>" alt=""></div>
                     <div class="details invert">
                         <div class="symbol black">S</div>
                         <p>
@@ -173,7 +173,7 @@
             </section>
             <section theme="dark" class="anchored" style="height: 1057px;">
                 <div class="project" style="position: fixed; z-index: 3;">
-                    <div class="image"><img src="<? echo get_theme_file_uri('img/backcountry_app.jpg'); ?>" alt=""></div>
+                    <div class="image"><img src="<? echo wp_make_link_relative(get_theme_file_uri('img/backcountry_app.jpg')); ?>" alt=""></div>
                     <div class="details">
                         <div class="symbol white">B</div>
                         <p>
@@ -192,7 +192,7 @@
             </section>
             <section theme="light" class="anchored" style="height: 1057px;">
                 <div class="project invert" style="position: fixed; z-index: 2;">
-                    <div class="image"><img src="<? echo get_theme_file_uri('img/competitive.jpg'); ?>" alt=""></div>
+                    <div class="image"><img src="<? echo wp_make_link_relative(get_theme_file_uri('img/competitive.jpg')); ?>" alt=""></div>
                     <div class="details invert">
                         <div class="symbol">C</div>
                         <p>

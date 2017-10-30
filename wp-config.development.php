@@ -24,8 +24,7 @@ define('DB_PASSWORD', 'root');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
-
-/** MySQL database password - set in wp-config.local.php */
+                                                  
 
 /**
  * For developers: WordPress debugging mode.
