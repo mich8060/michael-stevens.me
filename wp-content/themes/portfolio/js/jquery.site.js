@@ -1,29 +1,80 @@
 $(document).ready(function(){
+	
+	$current = 0;
+	$direction = 'down';
+	$mobile = ($(window).width() < 900) ? true : false;
+	
+	
+		$(document).on({
+			scroll: function(e){
+				$mobile = ($(window).width() < 900) ? true : false;
+				if(!$mobile){
+					$scroll = $(window).scrollTop();
+					$direction = ($scroll > $current) ? 'down':'up';
+					$current = $scroll;
 
-	$(document).on({
-		click:function(e){
-			$('body').toggleClass('open');
-		}
-	},'header .menu');
+					$('section').each(function(index){
+						$position = $(this).offset().top;
+						$height = $(this).height();
+						if($scroll >= $position && $scroll <= ($position + $height)){
+							$header = $('header');
+							$theme = $(this).attr('theme');
+							if(!$header.hasClass($theme)){
+								$header.removeClass();
+								$header.addClass($theme);
+							}
+						}
+					});
+
+					$('.anchored').each(function(index){
+						$position = $(this).offset().top;
+						$height = $(this).height();
+
+						if($scroll >= $position){
+							if($direction == 'down'){
+								$(this).find('.project').css({
+									'position':'absolute'
+								})
+							}
+						}else if($scroll < ($position + $height)){
+							if($direction == 'up'){
+								$(this).find('.project').css({
+									'position':'fixed'
+								});
+							}
+						}
+					});
+				}
+			}
+		});
 
 	
-	$(document).on({
-		click:function(e){
-			e.preventDefault();
-			$href = $(this).attr('href');
-			$('main').animate({
-				opacity:0
-			},300,function(){
-				console.log($href);
-				$("main").load($href+" .main-container",function(){
-					$('body').removeClass('open');
-					history.pushState({},'',$href);
-					$('main').animate({
-						opacity:1
-					},300);
+	$(window).load(function(){
+		if(!$mobile){
+			$('.anchored').each(function(index){
+				$(this).find('.project').css({
+					'position':'static'
 				});
-			})
+				$(this).css('height',$(this).innerHeight());
+				$(this).find('.project').css({
+					'position':'fixed',
+					'z-index':$('.anchored').length - index
+				});
+			});
 		}
-	},'.nav a, .listing');
+	})
+	
+	$(window).resize(function(){
+		$mobile = ($(window).width() < 900) ? true : false;
+		$('.anchored').each(function(index){
+			if($mobile){
+				$(this).find('.project').css({
+					'position':'static'
+				});
+			}
+			$(this).css('height','auto');
+			$(this).css('height',$(this).innerHeight());
+		});
+	})
 	
 });
